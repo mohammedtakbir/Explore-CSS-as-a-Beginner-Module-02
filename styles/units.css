@@ -21,3 +21,10 @@ hr{
     padding: 2px;
     border: 2px solid;
 }
+.icon-container{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    background-color: red;
+}
