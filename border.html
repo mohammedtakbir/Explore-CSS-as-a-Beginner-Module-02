@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border</title>
     <style>
-        html{
-            font-size: 62.5%;
-        }
-        div{
-            width: 200px;
-            min-height: 200px;
+        div {
+            width: 500px;
+            height: 30px;
+            background-color: lightseagreen;
             margin: 50px auto 0;
-            font-size: 2rem;
-            background-color: red;
-            /* border-radius: 10px; */
-            /* border-radius: 10px 50px; */
-            /* border-radius: 10px 50px 100px; */
-            /* border-radius: 10px 30px 50px 70px; */
+            /* border-style: solid; */
+            border-top-style: dashed;
+            border-bottom-style: solid;
+            border-left-style: double;
+            border-bottom-style: dotted;
+
+            border-top-width: 10px;
+            border-bottom-width: 20px;
+            border-left-width: 30px;
+            border-right-width: 50px;
+            /* border-width: 5px; */
+            border-color: lightcoral lightblue red green;
+        }
+        h1{
+            /* border-left: 10px solid #000; */
+            /* border-bottom: 5px solid; */
+            /* border-top: 50px solid coral; */
+            /* border-bottom: 100px solid; */
+        }
+        p{
+            width: 50px;
+            border: 1px solid;
+            text-align: center;
+            /* padding: 10px; */
+            /* padding: 10px 20px; */
+            /* padding: 5px 20px 40px; */
+            /* padding: 5px 10px 15px 20px; */
         }
     </style>
 </head>
+
 <body>
-    <div>
-        
-    </div>
+    <div></div>
+    <h1>Border</h1>
+    <p>Lorem</p>
 </body>
+
 </html>
