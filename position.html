@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent {
+            margin: 20px;
+            padding: 1em .5em;
+            background-color: lightblue;
+            width: 500px;
+            position: relative;
+            height: 200vh;
+        }
+
+        .child-one {
+            background-color: lightcoral;
+            padding: .3em;
+
+            position: fixed;
+            top: 0;
+            right: 0;
+
+            /* top: 0; */
+            /* position: relative;
+            left: 20px; */
+        }
+
+        .child-two {
+            background-color: lightseagreen;
+            padding: .3em;
+
+            position: sticky;
+            top: 0;
+        }
+        .child-three {
+            background-color: lightgreen;
+            padding: .3em;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1>Parent</h1>
+        <div class="child-one">
+            <h1>One</h1>
+        </div>
+        <div class="child-two">
+            <h1>Two</h1>
+        </div>
+        <div class="child-three">
+            <h1>Three</h1>
+        </div>
+    </div>
+</body>
+
+</html>
