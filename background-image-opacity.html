@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Opacity</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* One way */
+        .card {
+            width: 600px;
+            height: 400px;
+            margin: 50px auto;
+            padding: 10px;
+            box-shadow: 0 0 10px #ddd;
+            background-image: url(./assets/porsche-911-carrera.jpg);
+            position: relative;
+        }
+
+        .card::after {
+            content: '';
+            /* background-color: rgba(0, 0, 0, 0.494); */
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+        }
+
+        .card:hover::after {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+        }
+
+        .content {
+            color: #fff;
+            position: relative;
+            z-index: 999;
+        }
+
+        /* Another way */
+
+        /* .card {
+            width: 600px;
+            height: 400px;
+            padding: 10px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px #ddd;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(./assets/porsche-911-carrera.jpg);
+            position: relative;
+        }
+        .content{
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <h2>lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aut qui voluptatem aliquid, facere, rem
+                eligendi sint, suscipit hic necessitatibus animi ullam eum sapiente mollitia provident officia sunt
+                perspiciatis nulla.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
