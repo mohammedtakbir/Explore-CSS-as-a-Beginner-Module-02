@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,35 @@
     <title>Combinator</title>
     <style>
         /* Descendant Combinator */
-        .grand-parent .parent .child{
+        /* .grand-parent .parent .child {
             color: red;
         }
-        .grand-parent .parent .child span{
+
+        .grand-parent .parent .child span {
             color: green;
-        }
+        } */
 
         /* Child Combinator */
-        ul > li{
+        /* ul>li {
             border-top: 2px solid;
-        } 
+        } */
+
+        /* Adjacent Sibling Combinator */
+        div + p{
+            background-color: yellow;
+        }
+
     </style>
 </head>
+
 <body>
-    <div class="grand-parent">
+    <!-- <div class="grand-parent">
         <div class="parent">
             <p class="child">Descendant <span>Combinator</span></p>
         </div>
-    </div>
+    </div> -->
 
-    <ul>
+    <!-- <ul>
         <li>Hey there!</li>
         <li>players
             <ol type="i">
@@ -45,6 +54,22 @@
                 </li>
             </ul>
         </div>
-    </ul>
+    </ul> -->
+
+    <div>
+        <p>Paragraph-01</p>
+        <p>Paragraph-02</p>
+    </div>
+    <p>Paragraph-03</p>
+    <p>Paragraph-04</p>
+
+    <div>
+        <p>Paragraph-05</p>
+        <p>Paragraph-06</p>
+    </div>
+    <p>Paragraph-07</p>
+    <p>Paragraph-08</p>
+
 </body>
+
 </html>
