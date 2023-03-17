@@ -6,14 +6,14 @@ body {
     font-size: 1.5rem;
 }
 
-/* //* Hover */
+/* //* :Hover */
 .hover a:hover {
     background-color: #000;
     color: #fff;
     text-decoration: none;
 }
 
-/* //* active */
+/* //* :active */
 .active-button {
     background-color: lightseagreen;
     border: none;
@@ -32,7 +32,7 @@ body {
     box-shadow: none;
 }
 
-/* //* focus */
+/* //* :focus */
 .focus-button {
     background-color: lightblue;
     border: none;
@@ -59,7 +59,7 @@ body {
     display: block;
 } */
 
-/* //* target */
+/* //* :target */
 #main-content:target,
 #main-content:target ~ *
 {
@@ -67,7 +67,7 @@ body {
     scroll-margin-top: 30px;
 }
 
-/* //* link, visited, hover, active */
+/* //* :link, :visited, :hover, :active */
 .link:link{
     color: blue;
 }
@@ -81,4 +81,23 @@ body {
     transform: scale(.98);
     display: inline-block;
     color: black;
+}
+
+/* //* :disable and :enabled */
+.disable:disabled{
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: not-allowed;
+}
+.enable:enabled{
+    border: none;
+    background-color: lightseagreen;
+    transform: scale(.98);
+    display: inline-block;
+}
+.enable:active{
+    outline: 2px solid;
 }
