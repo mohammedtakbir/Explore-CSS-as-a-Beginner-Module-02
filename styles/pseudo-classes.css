@@ -66,3 +66,19 @@ body {
     background-color: lightgoldenrodyellow;
     scroll-margin-top: 30px;
 }
+
+/* //* link, visited, hover, active */
+.link:link{
+    color: blue;
+}
+.link:visited{
+    color: red;
+}
+.link:hover{
+    color: lawngreen;
+}
+.link:active{
+    transform: scale(.98);
+    display: inline-block;
+    color: black;
+}
