@@ -1,0 +1,56 @@
+body {
+    font-size: 1.5rem;
+}
+
+/* Hover */
+.hover a:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* active */
+.active-button {
+    background-color: lightseagreen;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.active-button:hover {
+    box-shadow: 0 0 10px #a2a2a2;
+}
+
+.active-button:active {
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+/* focus */
+.focus-button {
+    background-color: lightblue;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.focus-button:hover {
+    box-shadow: 0 0 10px #a2a2a2;
+}
+
+.focus-button:focus {
+    background-color: #000;
+    color: #fff;
+    outline: 4px dotted blue;
+    outline-offset: 2px;
+}
+.helper{
+    display: none;
+}
+:focus-within .helper{
+    display: block;
+}
