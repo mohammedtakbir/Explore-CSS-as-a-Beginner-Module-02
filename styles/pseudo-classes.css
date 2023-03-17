@@ -1,15 +1,19 @@
+*{
+    text-decoration: none;
+    color: #000;
+}
 body {
     font-size: 1.5rem;
 }
 
-/* Hover */
+/* //* Hover */
 .hover a:hover {
     background-color: #000;
     color: #fff;
     text-decoration: none;
 }
 
-/* active */
+/* //* active */
 .active-button {
     background-color: lightseagreen;
     border: none;
@@ -28,7 +32,7 @@ body {
     box-shadow: none;
 }
 
-/* focus */
+/* //* focus */
 .focus-button {
     background-color: lightblue;
     border: none;
@@ -51,6 +55,14 @@ body {
 .helper{
     display: none;
 }
-:focus-within .helper{
+/*:focus-within .helper{
     display: block;
+} */
+
+/* //* target */
+#main-content:target,
+#main-content:target ~ *
+{
+    background-color: lightgoldenrodyellow;
+    scroll-margin-top: 30px;
 }
