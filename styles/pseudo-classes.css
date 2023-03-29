@@ -1,7 +1,8 @@
-*{
+* {
     text-decoration: none;
     color: #000;
 }
+
 body {
     font-size: 1.5rem;
 }
@@ -52,39 +53,43 @@ body {
     outline: 4px dotted blue;
     outline-offset: 2px;
 }
-.helper{
+
+.helper {
     display: none;
 }
+
 /*:focus-within .helper{
     display: block;
 } */
 
 /* //* :target */
 #main-content:target,
-#main-content:target ~ *
-{
+#main-content:target ~ * {
     background-color: lightgoldenrodyellow;
     scroll-margin-top: 30px;
 }
 
 /* //* :link, :visited, :hover, :active */
-.link:link{
+.link:link {
     color: blue;
 }
-.link:visited{
+
+.link:visited {
     color: red;
 }
-.link:hover{
+
+.link:hover {
     color: lawngreen;
 }
-.link:active{
+
+.link:active {
     transform: scale(.98);
     display: inline-block;
     color: black;
 }
 
 /* //* :disable and :enabled */
-.disable:disabled{
+.disable:disabled {
     background-color: black;
     color: #fff;
     padding: 20px 30px;
@@ -92,12 +97,19 @@ body {
     font-size: 1.2rem;
     cursor: not-allowed;
 }
-.enable:enabled{
+
+.enable:enabled {
     border: none;
     background-color: lightseagreen;
     transform: scale(.98);
     display: inline-block;
 }
-.enable:active{
+
+.enable:active {
     outline: 2px solid;
+}
+
+/* //* :check and :indeterminate */
+#check:checked{
+    box-shadow: 0 0 5px green;
 }
