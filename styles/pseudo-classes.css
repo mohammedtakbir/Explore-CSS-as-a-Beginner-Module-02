@@ -113,3 +113,9 @@ body {
 #check:checked{
     box-shadow: 0 0 5px green;
 }
+/* //* :placeholder-shown */
+#placeholder:placeholder-shown{
+    font-style: italic;
+    padding: .2rem;
+    font-size: 1rem;
+}
