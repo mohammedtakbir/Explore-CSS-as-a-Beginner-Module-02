@@ -119,3 +119,14 @@ body {
     padding: .2rem;
     font-size: 1rem;
 }
+
+/* //* :valid, :invalid, :in-range */
+#valid-invalid:valid{
+    border: 1px solid green;
+}
+#valid-invalid:invalid{
+    border: 1px solid red;
+}
+#range:in-range{
+    background-color: lightseagreen;
+}
