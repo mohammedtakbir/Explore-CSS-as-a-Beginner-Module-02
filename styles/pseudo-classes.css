@@ -2,7 +2,10 @@
     text-decoration: none;
     color: #000;
 }
-
+::selection{
+    background-color: rgb(26, 136, 130);
+    color: #fff;
+}
 body {
     font-size: 1.5rem;
 }
@@ -129,4 +132,16 @@ body {
 }
 #range:in-range{
     background-color: lightseagreen;
+}
+
+/* //* :first-child and :last-child, :only-child */
+.article p:first-child{
+    background-color: lightseagreen;
+}
+.article p:last-child{
+    background-color: lightblue;
+}
+
+#only-child li:only-child{
+    background-color: lightcyan;
 }
