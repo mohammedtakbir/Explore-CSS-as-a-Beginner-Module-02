@@ -145,3 +145,11 @@ body {
 #only-child li:only-child{
     background-color: lightcyan;
 }
+
+/* //* :first-of-type and :last-of-type */
+.parent div:first-of-type{
+    background-color: red;
+}
+.parent div:last-of-type{
+    background-color: lightseagreen;
+}
